@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 import Media from 'react-bootstrap/Media';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -43,9 +43,9 @@ const PersonPage = ({ match }) => {
           <h2>{mydata.name}</h2>
           <h3>{mydata.status}</h3>
           <h3>{mydata.species}</h3>
-          <Link to="/">
+{/*           <Link to="/"> */}
             <Button variant="primary">Regresa atras</Button>{' '}
-          </Link>
+{/*           </Link> */}
         </Media.Body>
       </Media>
     </>
