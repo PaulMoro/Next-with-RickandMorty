@@ -28,11 +28,11 @@ const Main = ({ data }) => {
                     <h2>{mydata.name}</h2>
                     <p>{mydata.species}</p>
                     <p>{mydata.status}</p>
-    {/*                   <span key={index}>
-                      <Link href="/character/id">
+                      <span key={index}>
+                     {/*  <Link href="/character/id"> */}
                         <Button variant="info">Info</Button>{' '}
-                      </Link>
-                    </span> */}
+                      {/* </Link> */}
+                    </span>
                   </Carousel.Caption>
                 </Carousel.Item>
               )}

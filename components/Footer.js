@@ -1,18 +1,24 @@
 import React from 'react';
 import Link from "next/link";
+import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Header = () => (
+const Footer = () => (
   <>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="">
-        <Link href="/">
-          Project in Next
-        </Link>
-      </Navbar.Brand>
+      <Jumbotron fluid>
+        <Container>
+          <h1>Project in Next</h1>
+          <p>
+            Este proyecto está hecho con Next, Bootstrap, 
+            React y sus hooks, llamado a una API y proximamente Redux.
+          </p>
+        </Container>
+      </Jumbotron>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
@@ -41,4 +47,4 @@ const Header = () => (
   </>
 );
 
-export default Header;
+export default Footer;
